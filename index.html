@@ -1,28 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <title> GEOG 485L/585L-My First Map </title>
+  <style>
+    .bg-1 {
+      background-color: #5d3c8f;
+      /* Purple */
+      color: #000000;
+    }
+
+    .bg-2 {
+      background-color: #6f1620;
+      /* Dark Red */
+      color: #ffffff;
+    }
+
+    .bg-3 {
+      background-color: #6f6616;
+      /* Dark green */
+      color: #555555;
+    }
+  </style>
+  <title>Leah Boley Personal Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
 </head>
+
 <body>
-    <p> 
-        My first map will appear here:
-    </p>
-    <div id="mapId" style="height:400px; width: 600px"></div>
-    <script>
-        
-    // Bandelier Hall East 35.0843° N, 106.6241° W
-    //create a map variable "mymap" that points to the map placed in the mapId <div>
-    //zoom the view on Bandelier Hall East building at a 17 zoom level
-    var mymap = L.map('mapId').setView([35.0843, -106.6241], 17);
 
-    // create a variable named "osm" that is used ti hold OpenStreetMap tile layer
-    var osm = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  <div class="container-fluid bg-1 text-center">
+    <h3>Who Am I?</h3>
+    <img src="River.jpg" class="img-circle" alt="River">
+    <h3>Geographer/Student/Mother</h3>
+  </div>
+  <div class="container-fluid bg-2 text-center">
+    <h3>What I am Studying</h3>
+    <p>I am currently working on my Bachelor's in Geography with a minor in Management.
+      Previous classes include Geography, Intro to ArcGIS, Management, Business Law, and Marketing amoung others. I am currently
+      taking cartography, applications of GIS, and Internet Mapping.</p>
+  </div>
 
-    // add the OpenStreetMap tile layer (i.e., the variable osm you defined above) to the map
-    osm.addTo(mymap);
-    
-    </script>    
+  <div class="container-fluid bg-3 text-center">
+    <h3>Where To Find Me?</h3>
+    <p>Lorem ipsum..</p>
+  </div>
 </body>
+
 </html>
