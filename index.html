@@ -2,7 +2,21 @@
 <html lang="en">
 
 <head>
+  <title>Leah Boley Personal Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link  rel="stylesheet" href="font.css"> 
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
   <style>
+     body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  
+  p {font-size: 16px;}
     .bg-1 {
       background-color: #5d3c8f;
       /* Purple */
@@ -18,34 +32,53 @@
     .bg-3 {
       background-color: #6f6616;
       /* Dark green */
-      color: #555555;
+      color: #000000;
+    }
+
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
     }
   </style>
-  <title>Leah Boley Personal Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script src="jquery.min.js"></script>
-  <script src="bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
   <div class="container-fluid bg-1 text-center">
-    <h3>Who Am I?</h3>
-    <img src="River.jpg" class="img-circle" alt="River">
+    <h1>Who Am I?</h1>
+    <div class="row">
+      <div class="col-sm-4">
+
+        <img src="River.jpg" class="img-responsive img-circle" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4">
+
+        <img src="student.jpg" class="img-responsive img-circle" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4">
+
+        <img src="mother.jpg" class="img-responsive img-circle" style="width:100%" alt="Image">
+      </div>
+    </div>
     <h3>Geographer/Student/Mother</h3>
   </div>
+
   <div class="container-fluid bg-2 text-center">
     <h3>What I am Studying</h3>
     <p>I am currently working on my Bachelor's in Geography with a minor in Management.
-      Previous classes include Geography, Intro to ArcGIS, Management, Business Law, and Marketing amoung others. I am currently
+      Previous classes include Geography, Intro to ArcGIS, Management, Business Law, and Marketing among others. I am
+      currently
       taking cartography, applications of GIS, and Internet Mapping.</p>
   </div>
 
   <div class="container-fluid bg-3 text-center">
-    <h3>Where To Find Me?</h3>
-    <p>Lorem ipsum..</p>
+    <h3>How to contact me</h3>
+
+    <p>Email leahboley7@gmail.com</p>
+    <p>School Email lboley7@unm.edu</p>
+    <p>LinkedIn https://www.linkedin.com/in/leah-boley-3a64801a6/ </p>
+    
   </div>
 </body>
 
